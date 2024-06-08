@@ -4,7 +4,7 @@
 
 https://github.com/rolling-scopes-school/aws/blob/main/aws-developer/02_serving_spa/task.md
 
-## Self score: 70/100
+## Self score: 100/100
 
 ### +30 Manual deploy to S3
 
@@ -14,7 +14,7 @@ https://task2-manual.s3.eu-west-1.amazonaws.com/index.html
 
 https://d1bdrxjk76zexq.cloudfront.net
 
-### +0/30 Automatic CDK Deploy
+### +30 Automatic CDK Deploy
 
 - Go to project root
 
