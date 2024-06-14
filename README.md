@@ -1,38 +1,41 @@
-# React-shop-cloudfront
+# RSSchool AWS Course May-August 2024
 
-This is frontend starter project for nodejs-aws mentoring program. It uses the following technologies:
+## Task 2
 
-- [Vite](https://vitejs.dev/) as a project bundler
-- [React](https://beta.reactjs.org/) as a frontend framework
-- [React-router-dom](https://reactrouterdotcom.fly.dev/) as a routing library
-- [MUI](https://mui.com/) as a UI framework
-- [React-query](https://react-query-v3.tanstack.com/) as a data fetching library
-- [Formik](https://formik.org/) as a form library
-- [Yup](https://github.com/jquense/yup) as a validation schema
-- [Vitest](https://vitest.dev/) as a test runner
-- [MSW](https://mswjs.io/) as an API mocking library
-- [Eslint](https://eslint.org/) as a code linting tool
-- [Prettier](https://prettier.io/) as a code formatting tool
-- [TypeScript](https://www.typescriptlang.org/) as a type checking tool
+https://github.com/rolling-scopes-school/aws/blob/main/aws-developer/02_serving_spa/task.md
 
-## Available Scripts
+## Self score: 100/100
 
-### `start`
+### +30 Manual deploy to S3
 
-Starts the project in dev mode with mocked API on local environment.
+https://task2-manual.s3.eu-west-1.amazonaws.com/index.html
 
-### `build`
+### +40 Use Cloudfront for this deploy access
 
-Builds the project for production in `dist` folder.
+https://d1bdrxjk76zexq.cloudfront.net
 
-### `preview`
+### +30 Automatic CDK Deploy
 
-Starts the project in production mode on local environment.
+- Go to project root
 
-### `test`, `test:ui`, `test:coverage`
+- Run `npm install --force`
 
-Runs tests in console, in browser or with coverage.
+- Run `npm run build` (will be created dist folder)
 
-### `lint`, `prettier`
+- Go to CDK directory `cd cdk`
 
-Runs linting and formatting for all files in `src` folder.
+- Install CDK globally if you don't have it yet `npm install -g aws cdk`
+
+- Run `npm install` (will be created node_modules for cdk)
+
+- Create `.env` file and fill your AWS id amd region with field like in `.env.example` (or reaname it to `.env` and fix data)
+
+- Run `npm run bootstrap`. It's will launch boostrap command
+
+- Run `npm run deploy`. It's will deploy app
+
+- Make confirmation and wait few minutes (see console)
+
+- Go to you AWS account (S3 and Cloudfront sections) and check links to deployments
+
+- Run `npm run destroy`. It's will destroy app
