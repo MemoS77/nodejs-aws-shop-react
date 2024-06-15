@@ -33,7 +33,7 @@ export default function Header() {
             underline="none"
             to="/"
           >
-            Painting store @MemoS77
+            Painting Shop
           </Link>
         </Typography>
 

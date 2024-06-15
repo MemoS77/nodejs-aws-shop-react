@@ -2,6 +2,7 @@ import * as Yup from "yup";
 
 export const ProductSchema = Yup.object({
   id: Yup.string(),
+  image: Yup.string(),
   title: Yup.string().required().default(""),
   description: Yup.string().default(""),
   price: Yup.number().positive().required().defined().default(0),

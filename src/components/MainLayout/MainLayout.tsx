@@ -8,7 +8,7 @@ import Box from "@mui/material/Box";
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
-      {"Copyright © "}
+      {"Created by @MemoS77. Template: RSSchool"}
       <Link color="inherit" href="https://material-ui.com/" underline="hover">
         Pictures Store
       </Link>{" "}
