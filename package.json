@@ -8,6 +8,8 @@
     "preview": "npm run build && vite preview",
     "bootstrap": "cd cdk && cdk bootstrap",
     "deploy": "npm run build && cd cdk && cdk synth && cdk deploy",
+    "cloud:stop": "aws cloudfront update-distribution --id EX6VTGWSQVTIH --enabled false",
+    "cloud:start": "aws cloudfront update-distribution --id EX6VTGWSQVTIH --enabled true",
     "destroy": "cd cdk && cdk destroy",
     "test": "vitest",
     "test:ui": "vitest --ui",
