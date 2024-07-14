@@ -4,7 +4,7 @@ import * as cdk from 'aws-cdk-lib'
 import { CdkStack } from '../lib/cdk-stack'
 
 const app = new cdk.App()
-new CdkStack(app, 'Task-2-CDK-Stack', {
+new CdkStack(app, 'CDK-RSS-Shop', {
   env: {
     account: process.env.CDK_DEFAULT_ACCOUNT,
     region: process.env.CDK_DEFAULT_REGION,
